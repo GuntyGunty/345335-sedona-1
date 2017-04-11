@@ -1,0 +1,53 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-calendar {
+    width: 21px;
+    height: 22px;
+    background-position: -22px -22px;
+}
+
+.sprite-checkbox_off {
+    width: 22px;
+    height: 22px;
+    background-position: -87px -22px;
+}
+
+.sprite-checkbox_on {
+    width: 26px;
+    height: 22px;
+    background-position: -153px -22px;
+}
+
+.sprite-f {
+    width: 10px;
+    height: 19px;
+    background-position: -223px -22px;
+}
+
+.sprite-minus {
+    width: 12px;
+    height: 3px;
+    background-position: -277px -22px;
+}
+
+.sprite-plus {
+    width: 11px;
+    height: 11px;
+    background-position: -333px -22px;
+}
+
+.sprite-t {
+    width: 17px;
+    height: 15px;
+    background-position: -388px -22px;
+}
+
+.sprite-y {
+    width: 20px;
+    height: 16px;
+    background-position: -449px -22px;
+}

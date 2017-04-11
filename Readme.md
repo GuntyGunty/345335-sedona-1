@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Анастасия Беляева](https://up.htmlacademy.ru/htmlcss/17/user/345335).
-* Наставник: `Неизвестно`.
+* Студент: [Анастасия Беляева](https://up.htmlacademy.ru/htmlcss/16/user/345335).
+* Наставник: [Сергей Куликов](https://up.htmlacademy.ru/htmlcss/16/user/117875)
 
 ---
 
