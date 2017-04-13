@@ -153,28 +153,11 @@ img {
   padding: 0px 265px 5px 309px;
 }
 
-.feature {
-  display: flex;
-}
-
 .feature-dark {
   height: 257px;
   display: flex;
   background: #81b3d2;
   color: white;
-}
-
-.feature-light {
-  color: black;
-  min-height: 330px;
-  background-color: white;
-  width: 400px;
-  padding: 60px 40px 41px 40px;
-  display: inline-block;
-  list-style: none;
-  font-size: 14px;
-  line-height: 26px;
-  font-weight: bold;
 }
 
 .feature-driver {
@@ -224,10 +207,26 @@ img {
   width: 800px;
 }
 
+.feature-light {
+  color: black;
+  min-height: 330px;
+  background-color: white;
+}
+
 .features-list {
   margin: 0;
   padding: 0px 0px 0px 0px;
   font-size: 0px;
+}
+
+.feature {
+  width: 400px;
+  padding: 60px 40px 41px 40px;
+  display: inline-block;
+  list-style: none;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: bold;
 }
 
 .home, .burger {
@@ -240,7 +239,7 @@ img {
   margin-left: 129px;
 }
 
-.feature-light h3 {
+.feature h3 {
   margin: 15px 0px 0px 0px;
   font-size: 18px;
   line-height: 26px;
@@ -251,7 +250,7 @@ img {
   text-align: center;
 }
 
-.feature-light .feature-p {
+.feature .feature-p {
   font-size: 14px;
   color: black;
   font-family: "PTSans", "Arial", sans-serif;
@@ -263,19 +262,44 @@ img {
 
 
 /*.info-block2 {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
+  background: #81b3d2;
   padding: 24px 0px 48px 0px;
 }
 
 .info-block2 h3 {
+  font-size: 18px;
+  line-height: 26px;
+  color: white;
+  font-weight: bold;
+  font-family: "PTSans", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
   padding: 0px 100px 0px 140px;
   margin: 30px 0px 10px 0px;
 }
 
 .info-block2 span {
+  font-size: 14px;
+  line-height: 26px;
+  color: white;
+  font-family: "PTSans", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
   padding: 0px 160px 0px 175px;
 }
 
 .info-block2 p {
+  font-size: 14px;
+  line-height: 22px;
+  color: white;
+  font-family: "PTSans", "Arial", sans-serif;
+  text-transform: uppercase;
+  text-align: center;
   padding: 0px 20px 0px 20px;
   margin: 20px 0px 0px 0px;
 }*/
@@ -332,15 +356,14 @@ img {
   padding: 48px 0px 25px 0px;
 }
 
-.appointment-call {
-  max-width: 436px;
+.appointment p {
   font-size: 14px;
   line-height: 26px;
   color: black;
   font-family: "PTSans", "Arial", sans-serif;
   text-transform: uppercase;
   text-align: center;
-  margin-left: 390px;
+  margin: 0px;
 }
 
 .connection-btn {
