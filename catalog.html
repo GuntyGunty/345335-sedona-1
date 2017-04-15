@@ -22,7 +22,7 @@
               <a href="#">Карта штата</a>
             </li>
             <li>
-              <a>Гостиницы</a>
+              <a class="active-page">Гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -34,7 +34,7 @@
       </div>
     </header>
     <main>
-      <section class="filter-block">
+      <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
         <div class="filter">
           <fieldset class="filter-fieldset filter-fieldset-infrastructure">
             <legend class="checkbox-name-1">Инфраструктура:</legend>
@@ -104,9 +104,9 @@
           </div>
           <button class="btn-transparent" type="submit">Показать</button>
         </div>
-      </section>
+      </form>
       <section class="sort">
-        <h2 class="sort-title">Найдено:3</h2>
+        <h2 class="sort-title">Найдено: 3</h2>
         <div class="sort-items">
           <span class="sort-text">Сортировка:</span>
           <ul>
@@ -131,7 +131,7 @@
           <div class="card">
             <img class="item-image" src="img/catalog/amara.jpg" height="90" width="135" alt="Amara Resort &amp; spa">
             <div class="info">
-              <h2 class="item-title">Amara Resort &amp; spa</h2>
+              <a href="#"><h2 class="item-title">Amara Resort &amp; spa</h2></a>
               <div class="spans">
                 <span class="type">Гостиница</span>
                 <span class="price">Oт 4000 р.</span>
@@ -169,10 +169,10 @@
           <div class="card">
             <img class="item-image" src="img/catalog/desert.jpg" height="90" width="135" alt="Desert Quail Inn">
             <div class="info">
-              <h2 class="item-title">Desert Quail Inn</h2>
+              <a href="#"><h2 class="item-title">Desert Quail Inn</h2></a>
               <div class="spans">
-                <span class="type">Гостиница</span>
-                <span class="price">Oт 4000 р.</span>
+                <span class="type">Мотель</span>
+                <span class="price">Oт 3000 р.</span>
               </div>
               <div class="buttons">
                 <a class="btn info-btn" href="#">Подробнее</a>
@@ -207,10 +207,10 @@
           <div class="card">
             <img class="item-image" src="img/catalog/villas.jpg" height="90" width="135" alt="Villas at Poco Diablo">
             <div class="info">
-              <h2 class="item-title">Villas at Poco Diablo</h2>
+              <a href="#"><h2 class="item-title">Villas at Poco Diablo</h2></a>
               <div class="spans">
-                <span class="type">Гостиница</span>
-                <span class="price">Oт 4000 р.</span>
+                <span class="type">Апартаменты</span>
+                <span class="price">Oт 2000 р.</span>
               </div>
               <div class="buttons">
                 <a class="btn info-btn" href="#">Подробнее</a>
@@ -254,7 +254,7 @@
           </section>
           <p class="footer-copyright">
             <b>Website by</b>
-            <a class="HTML-academy-btn" href="https://htmlacademy.ru">
+            <a class="HTML-academy-btn" href="https://htmlacademy.ru/intensive/htmlcss">
               <img src="img/index/html.png" width="113" height="39" alt="HTMLAcademy">
             </a>
           </p>
