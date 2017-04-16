@@ -100,41 +100,41 @@
       <section class="appointment">
         <h2>Заинтересовались?</h2>
         <p class="appointment-call">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предлжения гостиниц в Седоне</p>
-        <a class="connection-btn" href="">Поиск гостиницы в Седоне</a>
-      </section>
-      <div class="modal-content modal-block">
-        <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-          <label class="race">
-            <span>Дата заезда:</span>
-            <div class="calendar-block">
-              <button type="button" class="calendar-button"></button>
-              <input class="race-date" type="text" name="race-date" value="24 Апреля 2017">
-            </div>
-            </label>
-          <label class="exit">
-            <span>Дата выезда:</span>
+        <button type="button" class="connection-btn" id="connection-button">Поиск гостиницы в Седоне</button>
+        <div class="modal-content modal-block">
+          <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
+            <label class="race">
+              <span>Дата заезда:</span>
               <div class="calendar-block">
                 <button type="button" class="calendar-button"></button>
-                <input class="exit-date" type="text" name="race-date" value="4 июля 2017">
+                <input class="race-date" type="text" name="race-date" value="24 Апреля 2017">
+              </div>
+              </label>
+            <label class="exit">
+              <span>Дата выезда:</span>
+                <div class="calendar-block">
+                  <button type="button" class="calendar-button"></button>
+                  <input class="exit-date" type="text" name="race-date" value="4 июля 2017">
+              </div>
+            </label>
+            <div class="modal-flex">
+              <span class="adults">Взрослые:</span>
+              <div class="adult">
+                <input type="text" class="adult-input" value="2" id="adult-num" name="adult">
+                <button type="button" class="plus-btn">-</button>
+                <button type="button" class="plus-btn">+</button>
+              </div>
+              <span class="children">Дети:</span>
+              <div class="childe">
+                <input type="text" class="childe-input" value="0" id="adult-num" name="child">
+                <button type="button" class="plus-btn">-</button>
+                <button type="button" class="plus-btn">+</button>
+              </div>
             </div>
-          </label>
-          <div class="modal-flex">
-            <span class="adults">Взрослые:</span>
-            <div class="adult">
-              <button type="button" class="plus-btn">-</button>
-              <input type="text" class="adult-input" value="2" id="adult-num" name="adult">
-              <button type="button" class="plus-btn">+</button>
-            </div>
-            <span class="children">Дети:</span>
-            <div class="childe">
-              <button type="button" class="plus-btn">-</button>
-              <input type="text" class="childe-input" value="0" id="adult-num" name="child">
-              <button type="button" class="plus-btn">+</button>
-            </div>
-          </div>
-          <a class="search-btn" href="#">Найти</a>
-        </form>
-      </div>
+            <a class="search-btn" href="#">Найти</a>
+          </form>
+        </div>
+      </section>
     </main>
     <footer>
       <div class="main-footer">
@@ -148,7 +148,6 @@
           <p class="footer-copyright">
             <b>Website by</b>
             <a class="HTML-academy-btn" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/index/html.png" width="113" height="39" alt="HTMLAcademy">
             </a>
           </p>
         </div>
@@ -157,5 +156,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
+
 </html>
