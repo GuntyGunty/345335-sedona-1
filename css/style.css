@@ -209,7 +209,7 @@
       font-size: 12px;
       line-height: 26px;
       padding: 0 auto;
-      margin-bottom: 14px;
+      margin-bottom: 0px;
     }
 
     .first-feature-driver p {
@@ -218,7 +218,6 @@
       line-height: 22px;
       font-weight: 400;
       padding: 0px 9px 20px 0px;
-      margin-top: 0px;
       color: white;
     }
 
@@ -235,7 +234,7 @@
       max-width: 153px;
       font-size: 18px;
       font-weight: bold;
-      padding: 34px 0px 0px 0px;
+      padding: 10px 0px 0px 0px;
     }
 
     .second-feature-driver p {
@@ -243,7 +242,7 @@
       font-size: 14px;
       line-height: 22px;
       font-weight: 400;
-      padding: 0px 0px 20px 0px;
+      padding: 0px 0px 4px 0px;
     }
 
     .feature-image {
@@ -319,8 +318,8 @@
       font-family: "PTSans", "Arial", sans-serif;
       text-transform: uppercase;
       text-align: center;
-      padding: 0px 0px 0px 0px;
-      margin: 19px 0px 0px 29px;
+      padding: 0px;
+      margin: 18px auto 0px;
     }
     /*.info-block2 {
   padding: 24px 0px 48px 0px;
@@ -374,7 +373,6 @@
       font-family: "PTSans", "Arial", sans-serif;
       text-transform: uppercase;
       text-align: center;
-      padding: 0px 10px 0px 0px;
     }
 
     .appointment {
@@ -409,7 +407,7 @@
       position: relative;
       display: block;
       width: 570px;
-      padding: 33px 0;
+      padding: 32px 0;
       margin: 45px 0px 0px 315px;
       font-size: 21px;
       color: white;
@@ -422,7 +420,7 @@
       outline: none;
     }
 
-    .connection-btn.js-activated~.modal-block {
+    .connection-btn.activated~.modal-block {
       display: none;
       opacity: 0;
     }
@@ -927,7 +925,6 @@
       display: flex;
       width: 34px;
       height: 10px;
-      margin-bottom: 8px;
     }
 
     .arrow-sort a {
@@ -949,7 +946,7 @@
       font-size: 0px;
       background: url("../img/sprite/spritesheet.png");
       background-position: -143px -5px;
-      margin-right: 7px;
+      margin-right: 11px;
     }
 
     .arrow-up:not(.active-arrow):hover {
@@ -1060,8 +1057,16 @@
       margin: 0px 0px 16px 0px;
     }
 
-    .type {
-      margin-right: 31px;
+    .hotel {
+      margin-right: 33px;
+    }
+
+    .motel {
+      margin-right: 60px;
+    }
+
+    .appartments {
+      margin-right: 17px;
     }
 
     .buttons {
@@ -1097,7 +1102,7 @@
 
     .price-btn {
       background-color: #766357;
-      padding: 3px 15px 3px 15px;
+      padding: 3px 18px 3px 18px;
     }
 
     .price-btn:hover {
@@ -1123,7 +1128,7 @@
       color: black;
       text-transform: uppercase;
       text-align: center;
-      margin: 0px 74px 0px 0px;
+      margin: 0px 73px 0px 0px;
     }
 
     .stars ul {
@@ -1135,7 +1140,7 @@
     .stars li {
       display: inline-block;
       list-style: none;
-      margin: 0px 0px 45px 6px;
+      margin: 0px 0px 35px 6px;
     }
 
     .star {
@@ -1230,6 +1235,12 @@
       height: 15px;
     }
 
+    .social-btn-tw:active::after {
+      background: url("../img/sprite/spritesheet.png") no-repeat center;
+      background-position: -350px -2px;
+      opacity: 0.3;
+    }
+
     .social-btn-fb {
       position: relative;
     }
@@ -1245,6 +1256,12 @@
       background-position: -259px -2px;
       width: 10px;
       height: 19px;
+    }
+
+    .social-btn-fb:active::after {
+      background: url("../img/sprite/spritesheet.png") no-repeat center;
+      background-position: -259px -2px;
+      opacity: 0.3;
     }
 
     .social-btn-you {
@@ -1264,11 +1281,17 @@
       height: 16px;
     }
 
+    .social-btn-you:active::after {
+      background: url("../img/sprite/spritesheet.png") no-repeat center;
+      background-position: -371px -2px;
+      opacity: 0.3;
+    }
+
     .footer-copyright {
       display: inline-block;
       vertical-align: middle;
       padding-left: 25px;
-      padding-bottom: 20px;
+      padding-bottom: 23px;
     }
 
     .footer-copyright b {
