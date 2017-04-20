@@ -1,3 +1,4 @@
-document.querySelector(".connection-button").addEventListener("click", function(e) {
-  e.target.classList.toggle(jsactivated);
+var btn = document.querySelector(".connection-btn");
+btn.addEventListener("click", function(e) {
+  e.target.classList.toggle("jsactivated");
 });
