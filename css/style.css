@@ -51,44 +51,45 @@ img {
 
 .nav ul {
   margin: 0;
-  padding: 0px 0px 0px 71px;
   font-size: 0px;
+  padding: 0px;
 }
 
 .nav li {
   display: inline-block;
-  width: 160px;
+  vertical-align: baseline;
+  width: 20%;
   list-style: none;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
   padding: 14px 0px 15px 0px;
-  margin-right: 81px;
 }
 
 .nav li:nth-child(1) {
-  margin-right: 81px;
+  padding-left: 6%;
   text-align: left;
 }
 
 .nav li:nth-child(2) {
-  margin-right: 251px;
+  padding-left: 6%;
   text-align: left;
+  margin-right: 20%;
 }
 
 .nav li:nth-child(3) {
-  margin-right: 96px;
   text-align: right;
+  padding-right: 6%;
 }
 
 .nav li:nth-child(4) {
-  width: 150px;
-  margin-right: 0px;
   text-align: right;
+  padding-right: 6%;
 }
 
 .nav a {
   display: inline-block;
+  vertical-align: baseline;
   text-transform: uppercase;
   text-decoration: none;
   color: #000000;
@@ -183,6 +184,7 @@ img {
   width: 400px;
   padding: 63px 40px 41px 40px;
   display: inline-block;
+  vertical-align: baseline;
   list-style: none;
   font-size: 14px;
   line-height: 26px;
@@ -195,7 +197,7 @@ img {
 }
 
 .features-row li .feature-name {
-  margin: 0px auto 19px;
+  margin: 0px auto 21px;
   width: 150px;
 }
 
@@ -226,18 +228,21 @@ img {
   font-size: 0px;
 }
 
+.feature-icon {
+  margin: 0 auto;
+  display: block;
+}
+
 .feature-icon-home, .feature-icon-burger {
   padding-bottom: 3px;
-  margin-left: 123px;
 }
 
 .feature-icon-gift {
   padding-bottom: 9px;
-  margin-left: 129px;
 }
 
 .feature-light .feature-name {
-  margin: 19px auto 0px;
+  margin: 25px auto 0px;
 }
 
 .feature-name {
@@ -264,6 +269,7 @@ img {
   width: 400px;
   padding: 45px 40px 56px 40px;
   display: inline-block;
+  vertical-align: baseline;
   list-style: none;
   font-size: 14px;
   line-height: 26px;
@@ -329,16 +335,13 @@ img {
   z-index: 100;
   background: white;
   transform: translateX(-50%);
-  padding: 55px 0px 54px 56px;
+  padding: 56px 0px 52px 56px;
   box-shadow: 0 0 40px -5px #494848;
   transition: opacity 1s ease-in;
 }
 
 .modal-form {
-  display: flex;
   position: relative;
-  justify-content: space-between;
-  flex-direction: column;
   align-items: baseline;
 }
 
@@ -354,8 +357,8 @@ img {
   position: absolute;
   padding: 0px;
   margin: 0px;
-  left: 318px;
-  top: 7px;
+  left: 313px;
+  top: 9px;
   width: 22px;
   height: 22px;
   background: transparent url("../img/sprite/spritesheet.png");
@@ -385,88 +388,85 @@ img {
   border: none;
 }
 
-.race, .exit {
-  display: flex;
+.form-label {
   font-size: 14px;
   line-height: 26px;
   color: black;
-  font-weight: 400;
-  margin: 0px 0px 28px 0px;
+  font-weight: bold;
 }
 
-.race span {
+.form-label-race {
   padding-top: 5px;
   padding-right: 23px;
 }
 
-.exit span {
+.form-label-exit {
   padding-right: 20px;
   padding-top: 5px;
 }
 
-.race-date, .exit-date {
-  display: inline-block;
-  width: 349px;
-  height: 38px;
+.form-text {
   font-size: 14px;
   line-height: 26px;
-  padding: 0px 0px 0px 14px;
   background-color: #f2f2f2;
-  border: none;
   font-weight: bold;
   text-align: left;
-  background: #f2f2f2;
+}
+
+.form-text-race, .form-text-exit {
+  display: inline-block;
+  vertical-align: baseline;
+  width: 345px;
+  height: 38px;
+  padding: 0px 0px 3px 10px;
+  font-weight: bold;
+  text-align: left;
+  border: none;
   outline: none;
 }
 
-.race-date {
-  padding: 0px 0px 3px 14px;
+.form-text-race {
+  padding: 0px 0px 3px 10px;
 }
 
-.race-date::-ms-clear {
+.form-text-race::-ms-clear {
   display: none;
 }
 
-.exit-date::-ms-clear {
+.form-text-exit::-ms-clear {
   display: none;
 }
 
-.modal-flex {
+.form-item {
   display: flex;
   justify-content: space-between;
   margin-bottom: 29px;
   width: 460px;
 }
 
-.adults, .children {
-  font-size: 12px;
-  line-height: 26px;
-  color: black;
-  font-weight: 400;
-  text-align: left;
-  padding-top: 8px;
-  margin: 0px 0px 31px 15px;
+.form-item:nth-child(3) {
+  margin-bottom: 53px;
 }
 
-.adult-input, .childe-input {
+.form-label-adults, .form-label-children {
+  text-align: left;
+  padding-top: 8px;
+}
+
+.form-text-adult, .form-text-child {
   vertical-align: middle;
   width: 39px;
   height: 38px;
-  font-size: 14px;
   border: none;
-  line-height: 26px;
-  color: black;
-  font-weight: bold;
   text-align: center;
-  background: #f2f2f2;
   padding: 3px 0px 0px 0px;
 }
 
-.adult, .childe {
+.form-item-childe, .form-item-adult {
   font-size: 0px;
 }
 
-.plus-btn {
+.form-item-btn {
   vertical-align: middle;
   width: 39px;
   height: 38px;
@@ -480,17 +480,17 @@ img {
   font-weight: 600;
 }
 
-.plus-btn:hover {
+.form-item-btn:hover {
   color: black;
 }
 
-.plus-btn:active {
+.form-item-btn:active {
   color: #81b3d2;
 }
 
-.search-btn {
+.form-search-btn {
   display: block;
-  padding: 19px 194px;
+  padding: 19px 193px;
   font-size: 21px;
   color: white;
   text-align: center;
@@ -630,11 +630,13 @@ img {
 }
 
 .price-controls .min-price {
+  height: 36px;
   width: 150px;
   padding: 5px 0px 0px 65px;
 }
 
 .price-controls .max-price {
+  height: 36px;
   width: 150px;
   padding: 5px 0px 0px 62px;
 }
@@ -671,7 +673,7 @@ img {
   width: 4px;
   height: 4px;
   background: #ababab;
-  border: 9px solid #ffffff;
+  border: 8px solid #ffffff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
   cursor: pointer;
@@ -811,6 +813,7 @@ img {
 .arrow-up {
   display: inline-block;
   width: 12px;
+  vertical-align: baseline;
   height: 10px;
   font-size: 0px;
   background: url("../img/sprite/spritesheet.png");
@@ -833,6 +836,7 @@ img {
 .arrow-down {
   display: inline-block;
   width: 12px;
+  vertical-align: baseline;
   height: 10px;
   font-size: 0px;
   background: url("../img/sprite/spritesheet.png");
@@ -881,12 +885,6 @@ img {
 .card {
   width: 424px;
   display: flex;
-}
-
-.info {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
 }
 
 .info a {
@@ -1001,6 +999,7 @@ img {
 
 .stars li {
   display: inline-block;
+  vertical-align: baseline;
   list-style: none;
   margin: 0px 0px 35px 6px;
 }

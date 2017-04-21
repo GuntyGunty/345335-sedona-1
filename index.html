@@ -4,6 +4,7 @@
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -16,7 +17,7 @@
               <a href="#">Информация</a>
             </li>
             <li>
-              <a href="#" #>Фото и видео</a>
+              <a href="#">Фото и видео</a>
             </li>
             <li>
               <a href="#">Карта штата</a>
@@ -27,7 +28,7 @@
           </ul>
         </nav>
         <div class="logo">
-          <img src="img/index/logo.png" width="138" height="70">
+          <img src="img/index/logo.png" width="138" height="70" alt="Логотип">
         </div>
       </div>
     </header>
@@ -47,7 +48,7 @@
           <p class="feature-text">Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div>
         <div class="feature-image">
-          <img src="img/index/picture1.jpg" width="800" height="256">
+          <img src="img/index/picture1.jpg" width="800" height="256" alt="Пейзаж Седоны">
         </div>
       </section>
       <section class="feature">
@@ -70,7 +71,7 @@
       </section>
       <section class="features-row">
         <div class="feature-image">
-          <img src="img/index/picture2.jpg" width="800" height="256">
+          <img src="img/index/picture2.jpg" width="800" height="256" alt="Мост дьявола">
         </div>
         <div class="feature feature-dark">
           <h3 class="feature-name">Там есть мост&nbsp;дьявола</h3>
@@ -95,42 +96,41 @@
           <p class="feature-text">Большинство&nbsp;едет&nbsp;в&nbsp;Гранд&nbsp;Каньон&nbsp;и толпится там</p>
         </li>
       </ul>
-      </section>
       <section class="appointment">
         <h2>Заинтересовались?</h2>
         <p class="appointment-call">Укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие&nbsp;предлжения&nbsp;гостиниц&nbsp;в&nbsp;Седоне</p>
         <button type="button" class="connection-btn" id="connection-button">Поиск гостиницы в Седоне</button>
         <div class="modal-content modal-block">
           <form class="modal-form" action="https://echo.htmlacademy.ru" method="post">
-            <label class="race">
-              <span>Дата заезда:</span>
+            <div class="form-item">
+              <label class="form-label form-label-race" for="race-date">Дата заезда:</label>
               <div class="calendar-block">
-                  <input class="race-date" type="text" name="race-date" value="24 Апреля 2017">
+                <input class="form-text form-text-race" id="race-date" type="text" name="race-date" value="24 Апреля 2017">
                 <button type="button" class="calendar-button"></button>
               </div>
-              </label>
-            <label class="exit">
-              <span>Дата выезда:</span>
-                <div class="calendar-block">
-                  <input class="exit-date" type="text" name="race-date" value="4 июля 2017">
-                  <button type="button" class="calendar-button"></button>
-              </div>
-            </label>
-            <div class="modal-flex">
-              <span class="adults">Взрослые:</span>
-              <div class="adult">
-                <button type="button" class="plus-btn">-</button>
-                <input type="text" class="adult-input" value="2" id="adult-num" name="adult">
-                <button type="button" class="plus-btn adult-btn">+</button>
-              </div>
-              <span class="children">Дети:</span>
-              <div class="childe">
-                <button type="button" class="plus-btn">-</button>
-                <input type="text" class="childe-input" value="0" id="adult-num" name="child">
-                <button type="button" class="plus-btn">+</button>
+            </div>
+            <div class="form-item">
+              <label class="form-label form-label-exit" for="exit-date">Дата выезда:</label>
+              <div class="calendar-block">
+                <input class="form-text form-text-exit" id="exit-date" type="text" name="race-date" value="4 июля 2017">
+                <button type="button" class="calendar-button"></button>
               </div>
             </div>
-            <button type="submit" class="search-btn">Найти</button>
+            <div class="form-item">
+              <label class="form-label form-label-adults" for="adult-num">Взрослые:</label>
+              <div class="form-item-adult">
+                <button type="button" class="form-item-btn">-</button>
+                <input type="text" class="form-text form-text-adult" value="2" id="adult-num" name="adult">
+                <button type="button" class="form-item-btn adult-btn">+</button>
+              </div>
+              <label class="form-label form-label-children" for="adult-num">Дети:</label>
+              <div class="form-item-childe">
+                <button type="button" class="form-item-btn">-</button>
+                <input type="text" class="form-text form-text-child" value="0" id="child-num" name="child">
+                <button type="button" class="form-item-btn">+</button>
+              </div>
+            </div>
+            <button type="submit" class="form-search-btn">Найти</button>
           </form>
         </div>
       </section>
@@ -151,7 +151,7 @@
           </p>
         </div>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209543.59231075243!2d-111.88998190362865!3d34.85324641616187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sru!4v1492174136560"
-            width="1200" height="472" frameborder="0" style="border:0" allowfullscreen></iframe>
+            width="1200" height="472" style="border:0" allowfullscreen></iframe>
       </div>
     </footer>
   </div>
