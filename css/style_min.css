@@ -5,33 +5,33 @@ body {
   font-size: 14px;
   line-height: 21px;
   color: #000;
-  font-weight: normal;
+  font-weight: 400;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Arial", sans-serif;
   text-transform: uppercase;
-  box-sizing: border-box;
+  box-sizing: border-box
 }
 
-*, *::before, *::after {
-  box-sizing: inherit;
+*, ::before, ::after {
+  box-sizing: inherit
 }
 
 img {
-  max-width: 100%;
+  max-width: 100%
 }
 
 .visually-hidden {
-  display: none;
+  display: none
 }
 
 .container {
   width: 1200px;
   margin: 0 auto;
-  box-shadow: 0 0 50px -5px #6e6e6e;
+  box-shadow: 0 0 50px -5px #6e6e6e
 }
 
 .main-header {
-  background-color: #ffffff;
+  background-color: #fff
 }
 
 .main-header-layout {
@@ -39,17 +39,17 @@ img {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .nav {
-  width: 100%;
+  width: 100%
 }
 
 .nav ul {
   margin: 0;
   font-size: 0;
-  padding: 0;
+  padding: 0
 }
 
 .nav li {
@@ -59,29 +59,29 @@ img {
   list-style: none;
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
-  padding: 14px 0 15px 0;
+  font-weight: 700;
+  padding: 14px 0 15px
 }
 
 .nav li:nth-child(1) {
   padding-left: 6%;
-  text-align: left;
+  text-align: left
 }
 
 .nav li:nth-child(2) {
   padding-left: 6%;
   text-align: left;
-  margin-right: 20%;
+  margin-right: 20%
 }
 
 .nav li:nth-child(3) {
   text-align: right;
-  padding-right: 6%;
+  padding-right: 6%
 }
 
 .nav li:nth-child(4) {
   text-align: right;
-  padding-right: 6%;
+  padding-right: 6%
 }
 
 .nav a {
@@ -89,20 +89,20 @@ img {
   vertical-align: baseline;
   text-transform: uppercase;
   text-decoration: none;
-  color: #000;
+  color: #000
 }
 
 .nav a:not(.active-page):hover {
-  color: #a3c7de;
+  color: #a3c7de
 }
 
 .nav a:not(.active-page):active {
-  color: black;
-  opacity: 0.3;
+  color: #000;
+  opacity: .3
 }
 
 .nav .active-page {
-  color: #766357;
+  color: #766357
 }
 
 .logo {
@@ -110,27 +110,24 @@ img {
   left: 50%;
   z-index: 3;
   -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  transform: translateX(-50%)
 }
-
-
-/*main*/
 
 .main-content {
   position: relative;
-  margin-top: 0;
+  margin-top: 0
 }
 
 .banner {
   height: 508px;
   width: 1200px;
-  background: #e0edf5 url("../img/index/banner.jpg") no-repeat;
-  background-position: 0 -55px;
+  background: #e0edf5 url(../img/index/banner.jpg) no-repeat;
+  background-position: 0 -55px
 }
 
 .title-section {
   background-color: #fff;
-  padding: 57px 0 36px 0;
+  padding: 57px 0 36px
 }
 
 .title-section h2 {
@@ -138,10 +135,10 @@ img {
   font-size: 21px;
   line-height: 26px;
   color: #000;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   margin: 0 auto;
-  padding: 4px 0 0 0;
+  padding: 4px 0 0
 }
 
 .title-section p {
@@ -151,13 +148,13 @@ img {
   color: #000;
   text-transform: uppercase;
   text-align: center;
-  padding: 13px 2px 0 0;
+  padding: 13px 2px 0 0
 }
 
 .feature {
   padding: 55px 50px 40px;
   width: 400px;
-  text-align: center;
+  text-align: center
 }
 
 .features-row {
@@ -165,13 +162,13 @@ img {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  padding: 0;
+  padding: 0
 }
 
 .features-row-tell {
-  padding: 5px 0 30px 0;
+  padding: 5px 0 30px;
   padding-bottom: 30px;
-  background: #fff;
+  background: #fff
 }
 
 .feature-dark {
@@ -179,15 +176,15 @@ img {
   color: #fff;
   -ms-flex-direction: column;
   flex-direction: column;
-  text-align: center;
+  text-align: center
 }
 
 .feature-dark:nth-child(1) {
-  padding: 55px 47px 40px;
+  padding: 55px 47px 40px
 }
 
 .feature-dark .feature-text {
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .feature-light {
@@ -199,70 +196,70 @@ img {
   list-style: none;
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .features-row li {
-  background-color: #eeeeee;
-  padding: 48px 55px 57px;
+  background-color: #eee;
+  padding: 48px 55px 57px
 }
 
 .features-row li .feature-name {
   margin: 0 auto 21px;
-  width: 150px;
+  width: 150px
 }
 
 .features-row li .feature-text {
-  max-width: 250px;
+  max-width: 250px
 }
 
 .feature-number {
   display: block;
-  margin-bottom: 19px;
+  margin-bottom: 19px
 }
 
 .featurelight-feature-number {
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .feature-dark .feature-name, .feature-dark .feature-text {
-  color: #fff;
+  color: #fff
 }
 
 .feature-image {
   background-color: #fff;
-  width: 800px;
+  width: 800px
 }
 
 .feature-image img {
-  vertical-align: top;
+  vertical-align: top
 }
 
 .features-list {
   margin: 0;
   padding: 0;
-  font-size: 0;
+  font-size: 0
 }
 
 .feature-icon {
   margin: 0 auto 32px;
-  display: block;
+  display: block
 }
 
 .feature-icon-burger {
-  margin-top: 6px;
+  margin-top: 6px
 }
 
 .feature-icon-home {
-  margin-top: 4px;
+  margin-top: 4px
 }
 
 .feature-icon-gift {
-  padding-bottom: 0px;
+  padding-bottom: 0
 }
 
 .feature-light .feature-name {
-  margin: 30px auto 0;
+  margin: 30px auto 0
 }
 
 .feature-name {
@@ -270,12 +267,12 @@ img {
   margin: 0 auto 25px;
   font-size: 21px;
   line-height: 21px;
-  font-weight: bold;
-  text-align: center;
+  font-weight: 700;
+  text-align: center
 }
 
 .second-featuredark-name {
-  margin-bottom: 5px;
+  margin-bottom: 5px
 }
 
 .feature-text {
@@ -286,42 +283,42 @@ img {
   color: #000;
   text-align: center;
   padding: 0;
-  margin: 22px auto 0;
+  margin: 22px auto 0
 }
 
 .feature-text-attraction {
-  margin: 18px auto 0;
+  margin: 18px auto 0
 }
 
 .feature-text-lasvegas, .feature-text-grandcanyon {
-  margin: 18px 14px 0;
+  margin: 18px 14px 0
 }
 
 .feature-item {
   width: 400px;
-  padding: 45px 40px 56px 40px;
+  padding: 45px 40px 56px;
   display: inline-block;
   vertical-align: baseline;
   list-style: none;
   font-size: 14px;
   line-height: 26px;
-  font-weight: bold;
-  text-align: center;
+  font-weight: 700;
+  text-align: center
 }
 
 .appointment {
   background-color: #fff;
-  position: relative;
+  position: relative
 }
 
 .appointment h2 {
   font-size: 30px;
   line-height: 24px;
   color: #000;
-  font-weight: bold;
+  font-weight: 700;
   text-align: center;
   margin: 0 auto;
-  padding: 56px 0 30px;
+  padding: 56px 0 30px
 }
 
 .appointment-call {
@@ -330,7 +327,7 @@ img {
   line-height: 24px;
   color: #000;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 auto
 }
 
 .connection-btn {
@@ -349,17 +346,14 @@ img {
   outline: none;
   text-transform: uppercase;
   font-family: "PT Sans", "Arial", sans-serif;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .connection-btn.jsactivated~.modal-block {
   opacity: 0;
   visibility: hidden;
-  transition: visibility 0.5s, opacity 0.75s ease-in;
+  transition: visibility 0.5s, opacity .75s ease-in
 }
-
-
-/*модальный блок*/
 
 .modal-block {
   position: absolute;
@@ -371,19 +365,19 @@ img {
   transform: translateX(-50%);
   padding: 56px 0 52px 56px;
   box-shadow: 0 0 40px -5px #494848;
-  transition: opacity 1s ease-in;
+  transition: opacity 1s ease-in
 }
 
 .modal-form {
   position: relative;
   -ms-flex-align: baseline;
-  align-items: baseline;
+  align-items: baseline
 }
 
 .calendar-block {
   margin: 0;
   width: 346px;
-  position: relative;
+  position: relative
 }
 
 .calendar-button {
@@ -396,55 +390,55 @@ img {
   top: 9px;
   width: 22px;
   height: 22px;
-  background: transparent url("../img/sprite/spritesheet.png");
+  background: transparent url(../img/sprite/spritesheet.png);
   background-position: -2px -2px;
-  z-index: 10;
+  z-index: 10
 }
 
 .calendar-button:hover {
-  background: transparent url("../img/sprite/spritesheet.png");
-  background-position: -27px -2px;
+  background: transparent url(../img/sprite/spritesheet.png);
+  background-position: -27px -2px
 }
 
 .calendar-button:active {
-  background: transparent url("../img/sprite/spritesheet.png");
-  background-position: -52px -2px;
+  background: transparent url(../img/sprite/spritesheet.png);
+  background-position: -52px -2px
 }
 
 .modal-form input:hover {
   background-color: #ebebeb;
-  border: none;
+  border: none
 }
 
 .modal-form input:focus {
   background-color: #fff;
   border: 2px solid #ebebeb;
-  border: none;
+  border: none
 }
 
 .form-label {
   font-size: 14px;
   line-height: 26px;
   color: #000;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .form-label-race {
   padding-top: 5px;
-  padding-right: 23px;
+  padding-right: 23px
 }
 
 .form-label-exit {
   padding-right: 20px;
-  padding-top: 5px;
+  padding-top: 5px
 }
 
 .form-text {
   font-size: 14px;
   line-height: 26px;
   background-color: #f2f2f2;
-  font-weight: bold;
-  text-align: left;
+  font-weight: 700;
+  text-align: left
 }
 
 .form-text-race, .form-text-exit {
@@ -452,23 +446,23 @@ img {
   vertical-align: baseline;
   width: 345px;
   height: 38px;
-  padding: 0px 0px 3px 10px;
-  font-weight: bold;
+  padding: 0 0 3px 10px;
+  font-weight: 700;
   text-align: left;
   border: none;
-  outline: none;
+  outline: none
 }
 
 .form-text-race {
-  padding: 0 0 3px 10px;
+  padding: 0 0 3px 10px
 }
 
 .form-text-race::-ms-clear {
-  display: none;
+  display: none
 }
 
 .form-text-exit::-ms-clear {
-  display: none;
+  display: none
 }
 
 .form-item {
@@ -477,16 +471,16 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 29px;
-  width: 460px;
+  width: 460px
 }
 
 .form-item:nth-child(3) {
-  margin-bottom: 53px;
+  margin-bottom: 53px
 }
 
 .form-label-adults, .form-label-children {
   text-align: left;
-  padding-top: 8px;
+  padding-top: 8px
 }
 
 .form-text-adult, .form-text-child {
@@ -495,11 +489,11 @@ img {
   height: 38px;
   border: none;
   text-align: center;
-  padding: 3px 0 0 0;
+  padding: 3px 0 0
 }
 
 .form-item-childe, .form-item-adult {
-  font-size: 0;
+  font-size: 0
 }
 
 .form-item-btn {
@@ -513,15 +507,15 @@ img {
   margin: 0;
   padding: 0;
   font-size: 20px;
-  font-weight: 600;
+  font-weight: 600
 }
 
 .form-item-btn:hover {
-  color: black;
+  color: #000
 }
 
 .form-item-btn:active {
-  color: #81b3d2;
+  color: #81b3d2
 }
 
 .form-search-btn {
@@ -534,20 +528,17 @@ img {
   background-color: #81b3d2;
   border-radius: 2px;
   border: none;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .search-btn:hover {
-  background-color: #669ec0;
+  background-color: #669ec0
 }
 
 .search-btn:active {
   background-color: #5496bd;
-  color: #88b6d1;
+  color: #88b6d1
 }
-
-
-/*каталог*/
 
 .filter-form {
   display: -ms-flexbox;
@@ -556,9 +547,9 @@ img {
   justify-content: space-between;
   -ms-flex-align: center;
   align-items: center;
-  background: #7aa2c5 url("../img/catalog/background.jpg") no-repeat;
+  background: #7aa2c5 url(../img/catalog/background.jpg) no-repeat;
   background-position: 0 -55px;
-  padding-bottom: 5px;
+  padding-bottom: 5px
 }
 
 .filter {
@@ -566,7 +557,7 @@ img {
   display: flex;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 29px 0 0 70px;
+  padding: 29px 0 0 70px
 }
 
 .filter-fieldset {
@@ -575,26 +566,26 @@ img {
   border: none;
   margin-left: 0;
   padding-left: 0;
-  outline: none;
+  outline: none
 }
 
 .checkbox-name {
   font-size: 16px;
   color: #fff;
-  font-weight: bold;
-  margin-bottom: 4px;
+  font-weight: 700;
+  margin-bottom: 4px
 }
 
 .checkbox-label {
-  position: relative;
+  position: relative
 }
 
 .checkbox-label input[type="checkbox"] {
-  display: none;
+  display: none
 }
 
 .checkbox-indicator {
-  display: block;
+  display: block
 }
 
 .checkbox-label input[type="checkbox"]+.checkbox-indicator {
@@ -604,18 +595,18 @@ img {
   cursor: pointer;
   width: 26px;
   height: 27px;
-  background: url("../img/sprite/spritesheet.png") no-repeat;
-  background-position: -203px -2px;
+  background: url(../img/sprite/spritesheet.png) no-repeat;
+  background-position: -203px -2px
 }
 
 .checkbox-label input[type="checkbox"]:checked+.checkbox-indicator {
-  background: url("../img/sprite/spritesheet.png") no-repeat;
-  background-position: -229px -2px;
+  background: url(../img/sprite/spritesheet.png) no-repeat;
+  background-position: -229px -2px
 }
 
 .checkbox-list {
   padding: 0;
-  list-style: none;
+  list-style: none
 }
 
 .checkbox-list li {
@@ -624,23 +615,23 @@ img {
   padding-bottom: 6px;
   margin-bottom: 18px;
   font-size: 14px;
-  color: #fff;
+  color: #fff
 }
 
 .checkbox-list li:last-child {
-  margin-bottom: 0;
+  margin-bottom: 0
 }
 
 .filter-range {
   width: 315px;
-  margin: 20px 75px 20px 75px;
-  color: #fff;
+  margin: 20px 75px;
+  color: #fff
 }
 
 .filter-range-title {
   font-size: 16px;
   line-height: 21px;
-  margin-bottom: 10px;
+  margin-bottom: 10px
 }
 
 .price-controls {
@@ -649,7 +640,7 @@ img {
   margin-bottom: 23px;
   font-size: 0;
   border: 2px solid #fff;
-  border-radius: 2px;
+  border-radius: 2px
 }
 
 .price-controls::after {
@@ -661,26 +652,26 @@ img {
   height: 22px;
   background: #fff;
   -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%)
 }
 
 .price-controls label {
   display: inline-block;
   font-size: 14px;
   vertical-align: top;
-  cursor: pointer;
+  cursor: pointer
 }
 
 .price-controls .min-price {
   height: 36px;
   width: 150px;
-  padding: 5px 0 0 65px;
+  padding: 5px 0 0 65px
 }
 
 .price-controls .max-price {
   height: 36px;
   width: 150px;
-  padding: 5px 0 0 62px;
+  padding: 5px 0 0 62px
 }
 
 .price-controls input {
@@ -690,23 +681,23 @@ img {
   color: inherit;
   font: inherit;
   background: none;
-  border: none;
+  border: none
 }
 
 .range-controls {
   position: relative;
-  margin-bottom: 32px;
+  margin-bottom: 32px
 }
 
 .range-controls .scale {
   height: 2px;
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.3)
 }
 
 .range-controls .bar {
   width: 80%;
   height: 2px;
-  background: #fff;
+  background: #fff
 }
 
 .range-toggle {
@@ -718,21 +709,21 @@ img {
   border: 8px solid #fff;
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
-  cursor: pointer;
+  cursor: pointer
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  background: #1c4f80
 }
 
 .range-toggle-min {
   box-sizing: content-box;
-  left: 0;
+  left: 0
 }
 
 .range-toggle-max {
   box-sizing: content-box;
-  left: 80%;
+  left: 80%
 }
 
 .btn-transparent {
@@ -746,12 +737,12 @@ img {
   border: 2px solid #fff;
   border-radius: 2px;
   cursor: pointer;
-  text-transform: uppercase;
+  text-transform: uppercase
 }
 
 .btn-transparent:hover {
   color: #000;
-  background: #fff;
+  background: #fff
 }
 
 .sort {
@@ -760,9 +751,9 @@ img {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  background-color: white;
+  background-color: #fff;
   border-bottom: 1px solid #f2f2f2;
-  padding: 14px 0 12px 0;
+  padding: 14px 0 12px
 }
 
 .sort-items {
@@ -770,21 +761,21 @@ img {
   display: flex;
   -ms-flex-align: baseline;
   align-items: baseline;
-  margin-right: 476px;
+  margin-right: 476px
 }
 
 .sort-title {
   font-size: 21px;
   line-height: 26px;
-  font-weight: bold;
+  font-weight: 700;
   margin-right: 48px;
-  padding-left: 71px;
+  padding-left: 71px
 }
 
 .sort-text {
   font-size: 12px;
   line-height: 18px;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .sort ul {
@@ -793,7 +784,7 @@ img {
   position: relative;
   margin: 0;
   list-style: none;
-  padding: 1px 0 0 37px;
+  padding: 1px 0 0 37px
 }
 
 .sort li {
@@ -801,60 +792,60 @@ img {
   vertical-align: baseline;
   font-size: 12px;
   line-height: 18px;
-  font-weight: normal;
+  font-weight: 400;
   padding-left: 3px;
   padding-right: 29px;
-  opacity: 0.3;
+  opacity: .3
 }
 
 .sort a {
   text-decoration: none;
   color: #766357;
-  border-bottom: 2px dotted #766357;
+  border-bottom: 2px dotted #766357
 }
 
 .sort a:hover {
   color: #81b3d2;
-  border-bottom: 2px dotted #81b3d2;
+  border-bottom: 2px dotted #81b3d2
 }
 
 .sort a:active {
-  color: black;
-  border-bottom: none;
+  color: #000;
+  border-bottom: none
 }
 
 .sort .active {
   color: #81b3d2;
-  border-bottom: none;
+  border-bottom: none
 }
 
 .sort .active:hover {
   color: #81b3d2;
-  border-bottom: none;
+  border-bottom: none
 }
 
 .sort .active:active {
   color: #81b3d2;
-  border-bottom: none;
+  border-bottom: none
 }
 
 .arrow-sort {
   display: -ms-flexbox;
   display: flex;
   width: 34px;
-  height: 10px;
+  height: 10px
 }
 
 .arrow-sort a {
-  border-bottom: none;
+  border-bottom: none
 }
 
 .arrow-sort a:hover {
-  border-bottom: none;
+  border-bottom: none
 }
 
 .arrow-sort a:active {
-  border-bottom: none;
+  border-bottom: none
 }
 
 .arrow-up {
@@ -863,21 +854,21 @@ img {
   vertical-align: baseline;
   height: 10px;
   font-size: 0;
-  background: url("../img/sprite/spritesheet.png");
+  background: url(../img/sprite/spritesheet.png);
   background-position: -143px -5px;
-  margin-right: 11px;
+  margin-right: 11px
 }
 
 .arrow-up:not(.active-arrow):hover {
-  background: url("../img/sprite/spritesheet.png");
+  background: url(../img/sprite/spritesheet.png);
   background-position: -164px -5px;
-  border-bottom: none;
+  border-bottom: none
 }
 
 .arrow-up:not(.active-arrow):active {
-  background: url("../img/sprite/spritesheet.png");
+  background: url(../img/sprite/spritesheet.png);
   background-position: -185px -5px;
-  border-bottom: none;
+  border-bottom: none
 }
 
 .arrow-down {
@@ -886,30 +877,30 @@ img {
   vertical-align: baseline;
   height: 10px;
   font-size: 0;
-  background: url("../img/sprite/spritesheet.png");
-  background-position: -80px -5px;
+  background: url(../img/sprite/spritesheet.png);
+  background-position: -80px -5px
 }
 
 .arrow-down:not(.active-arrow):hover {
-  background: url("../img/sprite/spritesheet.png");
+  background: url(../img/sprite/spritesheet.png);
   background-position: -101px -5px;
-  border-bottom: none;
+  border-bottom: none
 }
 
 .arrow-down:not(.active-arrow):active {
-  background: url("../img/sprite/spritesheet.png");
+  background: url(../img/sprite/spritesheet.png);
   background-position: -122px -5px;
-  border-bottom: none;
+  border-bottom: none
 }
 
 .active-arrow {
-  background: url("../img/sprite/spritesheet.png");
+  background: url(../img/sprite/spritesheet.png);
   background-position: -122px -5px;
-  cursor: default;
+  cursor: default
 }
 
 .hotels {
-  margin-bottom: 3px;
+  margin-bottom: 3px
 }
 
 .hotel {
@@ -919,70 +910,70 @@ img {
   justify-content: space-between;
   background-color: #fff;
   padding: 28px 72px;
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #f2f2f2
 }
 
 .hotel:nth-child(2) {
-  border-bottom: none;
+  border-bottom: none
 }
 
 .hotel:nth-child(3) {
-  border-bottom: none;
+  border-bottom: none
 }
 
 .hotel-card {
   width: 424px;
   display: -ms-flexbox;
-  display: flex;
+  display: flex
 }
 
 .hotel-info a {
-  text-decoration: none;
+  text-decoration: none
 }
 
 .hotel-title {
   font-size: 21px;
   color: #000;
-  font-weight: bold;
-  margin: 0 0 9px 0px;
+  font-weight: 700;
+  margin: 0 0 9px
 }
 
 .hotel-title:hover {
-  color: #81b3d2;
+  color: #81b3d2
 }
 
 .hotel-title:active {
-  color: #b2b2b2;
+  color: #b2b2b2
 }
 
 .hotel-image {
-  margin: 2px 30px 2px 0;
+  margin: 2px 30px 2px 0
 }
 
 .hotel-summary {
   font-size: 14px;
   line-height: 21px;
   color: #000;
-  margin: 0 0 15px 0;
+  margin: 0 0 15px
 }
 
 .hotel-type-inn {
-  margin-right: 33px;
+  margin-right: 33px
 }
 
 .hotel-type-motel {
-  margin-right: 60px;
+  margin-right: 60px
 }
 
 .hotel-type-appartments {
-  margin-right: 17px;
+  margin-right: 17px
 }
 
 .hotel-buttons {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-between
 }
 
 .hotel-buttons .btn {
@@ -991,43 +982,43 @@ img {
   color: #fff;
   text-align: center;
   text-decoration: none;
-  border-radius: 2px;
+  border-radius: 2px
 }
 
 .hotel-info-btn {
   background-color: #81b3d2;
   margin-right: 7px;
-  padding: 3px 16px 3px 16px;
+  padding: 3px 16px
 }
 
 .hotel-info-btn:hover {
-  background-color: #669ec0;
+  background-color: #669ec0
 }
 
 .hotel-info-btn:active {
   background-color: #5496bd;
-  color: #88b6d1;
+  color: #88b6d1
 }
 
 .hotel-price-btn {
   background-color: #766357;
-  padding: 3px 17px 3px 17px;
+  padding: 3px 17px
 }
 
 .hotel-price-btn:hover {
-  background-color: #604e43;
+  background-color: #604e43
 }
 
 .hotel-price-btn:active {
   background-color: #604e43;
-  color: #503e33;
+  color: #503e33
 }
 
 .hotel-rate {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column;
-  flex-direction: column;
+  flex-direction: column
 }
 
 .hotel-rate-num {
@@ -1037,50 +1028,47 @@ img {
   font-size: 14px;
   color: #000;
   text-align: right;
-  margin: 0;
+  margin: 0
 }
 
 .hotel-stars ul {
   margin: 0;
   padding: 0;
-  font-size: 0;
+  font-size: 0
 }
 
 .hotel-stars li {
   display: inline-block;
   vertical-align: baseline;
   list-style: none;
-  margin: 0 0 35px 6px;
+  margin: 0 0 35px 6px
 }
 
 .hotel-star {
   width: 17px;
   height: 17px;
-  background: url("../img/catalog/star.png");
-  background-position: 0 0;
+  background: url(../img/catalog/star.png);
+  background-position: 0 0
 }
 
 .hidden-hotel-star {
-  visibility: hidden;
+  visibility: hidden
 }
-
-
-/*футер*/
 
 .main-footer {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-direction: column-reverse;
   flex-direction: column-reverse;
-  background: #fff url("../img/index/map.jpg") no-repeat;
-  height: 593px;
+  background: #fff url(../img/index/map.jpg) no-repeat;
+  height: 593px
 }
 
 .catalog-footer {
   -ms-flex-direction: column;
   flex-direction: column;
   background: #fff;
-  height: 114px;
+  height: 114px
 }
 
 .main-footer-layout {
@@ -1091,20 +1079,20 @@ img {
   -ms-flex-align: center;
   align-items: center;
   background-color: #fff;
-  opacity: 0.9;
-  padding: 38px 0 3px 0;
-  z-index: 10;
+  opacity: .9;
+  padding: 38px 0 3px;
+  z-index: 10
 }
 
 .main-footer-layout p {
-  margin: 0;
+  margin: 0
 }
 
 .tag {
   font-size: 21px;
   padding: 0 0 36px 30px;
   color: #000;
-  font-weight: bold;
+  font-weight: 700
 }
 
 .footer-social {
@@ -1115,9 +1103,7 @@ img {
   text-align: center;
   position: relative;
   width: 150px;
-  margin-bottom: 29px;
-  margin-left: 47px;
-  margin: 0px 0px 33px 52px;
+  margin: 0 0 33px 52px
 }
 
 .social-btn {
@@ -1125,20 +1111,20 @@ img {
   height: 49px;
   font-size: 0;
   text-decoration: none;
-  background-color: #81b3d2;
+  background-color: #81b3d2
 }
 
 .social-btn:hover {
-  background-color: #669ec0;
+  background-color: #669ec0
 }
 
 .social-btn:active {
   background-color: #5496bd;
-  color: #88b6d1;
+  color: #88b6d1
 }
 
 .social-btn-tw {
-  position: relative;
+  position: relative
 }
 
 .social-btn-tw::after {
@@ -1149,20 +1135,20 @@ img {
   top: 50%;
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url("../img/sprite/spritesheet.png") no-repeat center;
+  background: url(../img/sprite/spritesheet.png) no-repeat center;
   background-position: -350px -2px;
   width: 17px;
-  height: 15px;
+  height: 15px
 }
 
 .social-btn-tw:active::after {
-  background: url("../img/sprite/spritesheet.png") no-repeat center;
+  background: url(../img/sprite/spritesheet.png) no-repeat center;
   background-position: -350px -2px;
-  opacity: 0.3;
+  opacity: .3
 }
 
 .social-btn-fb {
-  position: relative;
+  position: relative
 }
 
 .social-btn-fb::after {
@@ -1173,20 +1159,20 @@ img {
   top: 50%;
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url("../img/sprite/spritesheet.png") no-repeat center;
+  background: url(../img/sprite/spritesheet.png) no-repeat center;
   background-position: -259px -2px;
   width: 10px;
-  height: 19px;
+  height: 19px
 }
 
 .social-btn-fb:active::after {
-  background: url("../img/sprite/spritesheet.png") no-repeat center;
+  background: url(../img/sprite/spritesheet.png) no-repeat center;
   background-position: -259px -2px;
-  opacity: 0.3;
+  opacity: .3
 }
 
 .social-btn-you {
-  position: relative;
+  position: relative
 }
 
 .social-btn-you::after {
@@ -1197,30 +1183,30 @@ img {
   top: 50%;
   -ms-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: url("../img/sprite/spritesheet.png") no-repeat center;
+  background: url(../img/sprite/spritesheet.png) no-repeat center;
   background-position: -371px -2px;
   width: 20px;
-  height: 16px;
+  height: 16px
 }
 
 .social-btn-you:active::after {
-  background: url("../img/sprite/spritesheet.png") no-repeat center;
+  background: url(../img/sprite/spritesheet.png) no-repeat center;
   background-position: -371px -2px;
-  opacity: 0.3;
+  opacity: .3
 }
 
 .footer-copyright {
   display: inline-block;
   vertical-align: middle;
   padding-left: 25px;
-  padding-bottom: 29px;
+  padding-bottom: 29px
 }
 
 .footer-copyright b {
   font-size: 14px;
   line-height: 26px;
   color: #000;
-  font-weight: 400;
+  font-weight: 400
 }
 
 .HTML-academy-btn {
@@ -1229,16 +1215,16 @@ img {
   display: inline-block;
   vertical-align: middle;
   margin-left: 5px;
-  background: url("../img/sprite/logosprite.png");
-  background-position: -1px -80px;
+  background: url(../img/sprite/logosprite.png);
+  background-position: -1px -80px
 }
 
 .HTML-academy-btn:hover {
-  background: url("../img/sprite/logosprite.png");
-  background-position: -1px -40px;
+  background: url(../img/sprite/logosprite.png);
+  background-position: -1px -40px
 }
 
 .HTML-academy-btn:active {
-  background: url("../img/sprite/logosprite.png");
-  background-position: -1px -0;
+  background: url(../img/sprite/logosprite.png);
+  background-position: -1px -0
 }
