@@ -442,6 +442,7 @@ img {
 .form-text {
   font-size: 14px;
   line-height: 26px;
+  font-family: "PT Sans", "Arial", sans-serif;
   background-color: #f2f2f2;
   font-weight: bold;
   text-align: left;
