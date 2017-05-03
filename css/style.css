@@ -289,13 +289,8 @@ img {
   margin: 22px auto 0;
 }
 
-
-/*.feature-text-attraction {
-  margin: 18px auto 0;
-}*/
-
 .feature-text-lasvegas, .feature-text-grandcanyon, .feature-text-attraction {
-  margin-top: 18px auto 0;
+  margin-top: 18px;
 }
 
 .feature-item {
