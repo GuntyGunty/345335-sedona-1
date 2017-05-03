@@ -168,7 +168,7 @@ img {
   padding: 0;
 }
 
-.features-row-tell {
+.features-row-tall {
   padding: 5px 0 30px 0;
   padding-bottom: 30px;
   background: #fff;
@@ -204,7 +204,7 @@ img {
 
 .features-row li {
   background-color: #eeeeee;
-  padding: 48px 55px 57px;
+  padding: 48px 50px 57px;
 }
 
 .features-row li .feature-name {
@@ -213,7 +213,7 @@ img {
 }
 
 .features-row li .feature-text {
-  max-width: 250px;
+  max-width: 270px;
 }
 
 .feature-number {
@@ -289,12 +289,13 @@ img {
   margin: 22px auto 0;
 }
 
-.feature-text-attraction {
-  margin: 18px auto 0;
-}
 
-.feature-text-lasvegas, .feature-text-grandcanyon {
-  margin: 18px 14px 0;
+/*.feature-text-attraction {
+  margin: 18px auto 0;
+}*/
+
+.feature-text-lasvegas, .feature-text-grandcanyon, .feature-text-attraction {
+  margin-top: 18px auto 0;
 }
 
 .feature-item {
@@ -356,6 +357,15 @@ img {
   opacity: 0;
   visibility: hidden;
   transition: visibility 0.5s, opacity 0.75s ease-in;
+}
+
+.connection-btn.jsactivated:hover {
+  background-color: #604e43;
+}
+
+.connection-btn.jsactivated:active {
+  background-color: #604e43;
+  color: #503e33;
 }
 
 
@@ -526,24 +536,27 @@ img {
   color: #81b3d2;
 }
 
-.form-search-btn {
-  display: block;
-  padding: 19px 193px;
-  font-size: 21px;
+.btn {
   color: #fff;
   text-align: center;
   text-decoration: none;
   background-color: #81b3d2;
+}
+
+.form-search-btn {
+  display: block;
+  padding: 19px 193px;
+  font-size: 21px;
   border-radius: 2px;
   border: none;
   text-transform: uppercase;
 }
 
-.search-btn:hover {
+.form-search-btn:hover {
   background-color: #669ec0;
 }
 
-.search-btn:active {
+.form-search-btn:active {
   background-color: #5496bd;
   color: #88b6d1;
 }
@@ -990,14 +1003,10 @@ img {
 .hotel-buttons .btn {
   display: block;
   font-size: 14px;
-  color: #fff;
-  text-align: center;
-  text-decoration: none;
   border-radius: 2px;
 }
 
 .hotel-info-btn {
-  background-color: #81b3d2;
   margin-right: 7px;
   padding: 3px 16px 3px 16px;
 }
