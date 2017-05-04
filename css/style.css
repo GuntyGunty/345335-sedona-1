@@ -1,5 +1,5 @@
 body {
-  min-width: 1280px;
+  max-width: 1200px;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -25,9 +25,9 @@ img {
 }
 
 .container {
-  width: 1200px;
+  max-width: 1120px;
   margin: 0 auto;
-  box-shadow: 0 0 50px -5px #6e6e6e;
+  box-shadow: 0 0 20px -5px #6e6e6e;
 }
 
 .main-header {
@@ -123,7 +123,7 @@ img {
 
 .banner {
   height: 508px;
-  width: 1200px;
+  width: 100%;
   background: #e0edf5 url("../img/index/banner.jpg") no-repeat;
   background-position: 0 -55px;
 }
@@ -207,15 +207,6 @@ img {
   padding: 48px 50px 57px;
 }
 
-.features-row li .feature-name {
-  margin: 0 auto 21px;
-  width: 150px;
-}
-
-.features-row li .feature-text {
-  max-width: 270px;
-}
-
 .feature-number {
   display: block;
   margin-bottom: 19px;
@@ -225,7 +216,7 @@ img {
   margin-bottom: 10px;
 }
 
-.feature-dark .feature-name, .feature-dark .feature-text {
+.feature-dark .feature-text {
   color: #fff;
 }
 
@@ -265,6 +256,11 @@ img {
   margin: 30px auto 0;
 }
 
+.features-row .feature-name-list {
+  margin: 0 auto 21px;
+  width: 150px;
+}
+
 .feature-name {
   width: 172px;
   margin: 0 auto 25px;
@@ -289,8 +285,9 @@ img {
   margin: 22px auto 0;
 }
 
-.feature-text-lasvegas, .feature-text-grandcanyon, .feature-text-attraction {
+.feature-text-list {
   margin-top: 18px;
+  max-width: 270px;
 }
 
 .feature-item {
@@ -488,7 +485,7 @@ img {
 }
 
 .form-item:nth-child(3) {
-  margin-bottom: 53px;
+  margin-bottom: 54px;
 }
 
 .form-label-adults, .form-label-children {
@@ -540,7 +537,7 @@ img {
 
 .form-search-btn {
   display: block;
-  padding: 19px 193px;
+  padding: 18px 194px;
   font-size: 21px;
   border-radius: 2px;
   border: none;
@@ -607,10 +604,10 @@ img {
   display: block;
 }
 
-.checkbox-label input[type="checkbox"]+.checkbox-indicator {
+.checkbox-label input[type="checkbox"]+.checkbox-indicator-accomodation {
   position: absolute;
-  top: -2px;
-  left: -38px;
+  top: 0px;
+  left: -42px;
   cursor: pointer;
   width: 26px;
   height: 27px;
@@ -618,7 +615,23 @@ img {
   background-position: -203px -2px;
 }
 
-.checkbox-label input[type="checkbox"]:checked+.checkbox-indicator {
+.checkbox-label input[type="checkbox"]+.checkbox-indicator-infrastructure {
+  position: absolute;
+  top: 0px;
+  left: -41px;
+  cursor: pointer;
+  width: 26px;
+  height: 27px;
+  background: url("../img/sprite/spritesheet.png") no-repeat;
+  background-position: -203px -2px;
+}
+
+.checkbox-label input[type="checkbox"]:checked+.checkbox-indicator-accomodation {
+  background: url("../img/sprite/spritesheet.png") no-repeat;
+  background-position: -229px -2px;
+}
+
+.checkbox-label input[type="checkbox"]:checked+.checkbox-indicator-infrastructure {
   background: url("../img/sprite/spritesheet.png") no-repeat;
   background-position: -229px -2px;
 }
@@ -630,11 +643,15 @@ img {
 
 .checkbox-list li {
   position: relative;
-  padding-left: 39px;
+  padding-left: 41px;
   padding-bottom: 6px;
   margin-bottom: 18px;
   font-size: 14px;
   color: #fff;
+}
+
+.checkbox-list-accomodation .checkbox-item {
+  padding-left: 43px;
 }
 
 .checkbox-list li:last-child {
@@ -1056,7 +1073,7 @@ img {
   display: inline-block;
   vertical-align: baseline;
   list-style: none;
-  margin: 0 0 35px 6px;
+  margin: 0 0 35px 7px;
 }
 
 .hotel-star {
@@ -1086,7 +1103,7 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   background: #fff;
-  height: 114px;
+  height: 118px;
 }
 
 .main-footer-layout {
@@ -1098,7 +1115,7 @@ img {
   align-items: center;
   background-color: #fff;
   opacity: 0.9;
-  padding: 38px 0 3px 0;
+  padding: 35px 0 3px 0;
   z-index: 10;
 }
 
@@ -1123,7 +1140,7 @@ img {
   width: 150px;
   margin-bottom: 29px;
   margin-left: 47px;
-  margin: 0px 0px 33px 52px;
+  margin: 0px 0px 32px 52px;
 }
 
 .social-btn {
