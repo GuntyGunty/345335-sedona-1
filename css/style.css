@@ -180,10 +180,7 @@ img {
   -ms-flex-direction: column;
   flex-direction: column;
   text-align: center;
-}
-
-.feature-dark:nth-child(1) {
-  padding: 55px 47px 40px;
+  padding-top: 50px;
 }
 
 .feature-dark .feature-text {
@@ -1091,59 +1088,55 @@ img {
 /*футер*/
 
 .main-footer {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column-reverse;
-  flex-direction: column-reverse;
+  position: relative;
   background: #fff url("../img/index/map.jpg") no-repeat;
-  height: 593px;
+  min-height: 594px;
 }
 
 .catalog-footer {
-  -ms-flex-direction: column;
-  flex-direction: column;
   background: #fff;
-  height: 118px;
 }
 
 .main-footer-layout {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
-  -ms-flex-align: center;
-  align-items: center;
+  width: 100%;
+  min-height: 120px;
+  position: absolute;
+  top: 474px;
   background-color: #fff;
   opacity: 0.9;
-  padding: 35px 0 3px 0;
   z-index: 10;
 }
 
-.main-footer-layout p {
-  margin: 0;
+.catalog-footer-layout {
+  position: static;
 }
 
-.tag {
+.main-footer-block {
+  width: 33.3%;
+  text-align: center;
+  padding-top: 36px;
+}
+
+.footer-tag {
+  display: inline-block;
+  margin-top: 10px;
   font-size: 21px;
-  padding: 0 0 36px 30px;
   color: #000;
+  line-height: 26px;
   font-weight: bold;
 }
 
 .footer-social {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  text-align: center;
+  display: inline-flex;
+  vertical-align: top;
   position: relative;
   width: 150px;
-  margin-bottom: 29px;
-  margin-left: 47px;
-  margin: 0px 0px 32px 52px;
+  font-size: 0;
 }
 
 .social-btn {
+  display: inline-block;
   width: 46px;
   height: 49px;
   font-size: 0;
@@ -1162,6 +1155,7 @@ img {
 
 .social-btn-tw {
   position: relative;
+  margin-right: 5px;
 }
 
 .social-btn-tw::after {
@@ -1210,6 +1204,7 @@ img {
 
 .social-btn-you {
   position: relative;
+  margin-left: 6px;
 }
 
 .social-btn-you::after {
@@ -1232,13 +1227,6 @@ img {
   opacity: 0.3;
 }
 
-.footer-copyright {
-  display: inline-block;
-  vertical-align: middle;
-  padding-left: 25px;
-  padding-bottom: 29px;
-}
-
 .footer-copyright b {
   font-size: 14px;
   line-height: 26px;
@@ -1246,22 +1234,29 @@ img {
   font-weight: 400;
 }
 
-.HTML-academy-btn {
+.footer-copyright {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
+}
+
+.html-academy-btn {
   width: 113px;
   height: 39px;
   display: inline-block;
+  font-size: 0;
   vertical-align: middle;
   margin-left: 5px;
   background: url("../img/sprite/logosprite.png");
   background-position: -1px -80px;
 }
 
-.HTML-academy-btn:hover {
+.html-academy-btn:hover {
   background: url("../img/sprite/logosprite.png");
   background-position: -1px -40px;
 }
 
-.HTML-academy-btn:active {
+.html-academy-btn:active {
   background: url("../img/sprite/logosprite.png");
   background-position: -1px -0;
 }
