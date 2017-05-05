@@ -575,10 +575,11 @@ img {
 
 .filter-fieldset {
   cursor: pointer;
-  margin-right: 108px;
+  margin-right: 116px;
   border: none;
   margin-left: 0;
   padding-left: 0;
+  padding-right: 0;
   outline: none;
 }
 
@@ -1095,6 +1096,7 @@ img {
 
 .catalog-footer {
   background: #fff;
+  min-height: auto;
 }
 
 .main-footer-layout {
