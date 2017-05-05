@@ -575,7 +575,7 @@ img {
 
 .filter-fieldset {
   cursor: pointer;
-  margin-right: 116px;
+  min-width: 254px;
   border: none;
   margin-left: 0;
   padding-left: 0;
